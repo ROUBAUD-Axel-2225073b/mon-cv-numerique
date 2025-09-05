@@ -25,14 +25,14 @@ Ce projet utilise GitHub Actions pour l'intégration continue (CI).
 
 Les fichiers de build sont sauvegardés comme artefacts lors des pushes sur la branche master et sont disponibles pendant 30 jours dans l'onglet Actions de votre dépôt GitHub.
 
-## Scripts npm disponibles
+## Scripts pnpm disponibles
 
-- `npm run dev` - Développement local
-- `npm run build` - Build de production  
-- `npm run lint` - Vérification ESLint
-- `npm run type-check` - Vérification TypeScript
-- `npm run test` - Tests (à configurer)
-- `npm run preview` - Prévisualisation du build
+- `pnpm run dev` - Développement local
+- `pnpm run build` - Build de production  
+- `pnpm run lint` - Vérification ESLint
+- `pnpm run type-check` - Vérification TypeScript
+- `pnpm run test` - Tests (à configurer)
+- `pnpm run preview` - Prévisualisation du build
 
 ## Statut des builds
 
