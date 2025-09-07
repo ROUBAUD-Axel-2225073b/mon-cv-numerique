@@ -1,6 +1,7 @@
 
 import Navbar from './components/Navbar'
-import Footer from './components/sections/footer'
+import AboutMe from './components/sections/AboutMe'
+import Footer from './components/sections/Footer'
 import Welcome from './components/sections/Welcome'
 import './index.css'
 
@@ -11,6 +12,7 @@ function App() {
       <main> 
             <Navbar/>
             <Welcome/>
+            <AboutMe/> 
       </main>
       <Footer/>
     </div>

@@ -3,7 +3,7 @@ import { LuDownload , LuMail ,LuArrowDown  } from "react-icons/lu";
 export default function Welcome() {
 
     return (
-    <section className="min-h-screen bg-gradient-to-br from-neutral-200 via-neutral-100 to-neutral-200 relative overflow-hidden">
+    <section id="welcome" className="min-h-screen bg-gradient-to-br from-neutral-200 via-neutral-100 to-neutral-200 relative overflow-hidden">
         <div className="absolute inset-0">
             <div className="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_1px_1px,_theme(colors.neutral.800)_3px,_transparent_0)] [background-size:24px_24px] pointer-events-none"></div>
             {/* Principal diagonal */}
