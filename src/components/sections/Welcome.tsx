@@ -6,10 +6,11 @@ export default function Welcome() {
     <section id="welcome" className="min-h-screen bg-gradient-to-br from-neutral-200 via-neutral-100 to-neutral-200 relative overflow-hidden">
         <div className="absolute inset-0">
             <div className="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_1px_1px,_theme(colors.neutral.800)_3px,_transparent_0)] [background-size:24px_24px] pointer-events-none"></div>
+            
             {/* Principal diagonal */}
-            <div className="absolute top-0 right-0 w-3/5 sm:w-1/2 md:w-1/2 h-full group">
+            <div className="absolute top-0 right-0 w-3/5 sm:w-1/2 md:w-1/2 h-full drop-shadow-xl/50 group">
                 <div className="absolute inset-0 w-full h-full bg-gradient-to-bl from-neutral-50 via-neutral-100 to-neutral-200 transform 
-                            skew-x-3 sm:skew-x-6 md:skew-x-17 origin-top-right drop-shadow-2xl border-l-2 "></div>
+                            skew-x-3 sm:skew-x-6 md:skew-x-17 origin-top-right border-l-2 "></div>
             </div>
             
         </div>
@@ -34,7 +35,7 @@ export default function Welcome() {
                         <span className="block text-neutral-900 transform transition-all duration-500 group-hover/title:translate-x-2 group-hover/title:text-neutral-800">
                             Axel
                         </span> 
-                        <span className="block text-green-zzz drop-shadow-lg transform transition-all duration-500 group-hover/title:translate-x-4 group-hover/title:scale-105">
+                        <span className="block text-green-zzz drop-shadow-xl/50 text-stroke-black transform transition-all duration-500 group-hover/title:translate-x-4 group-hover/title:scale-105">
                             Roubaud
                         </span>
                     </h1>
@@ -44,7 +45,7 @@ export default function Welcome() {
                 <div className="mb-6 sm:mb-8 group/subtitle">
                     <p className="text-base sm:text-lg md:text-xl text-neutral-900 font-bold max-w-xl leading-relaxed transition-colors duration-300">
                         Étudiant{' '}
-                        <span className="text-green-zzz drop-shadow font-bold">
+                        <span className="neon-text font-black relative">
                             Développeur
                         </span>
                         <br />
@@ -63,7 +64,7 @@ export default function Welcome() {
                                     <div className="absolute inset-0 w-3 h-3 bg-green-zzz rounded-full animate-ping opacity-20"></div>
                                 </div>
                                 <div className="flex-1">
-                                    <p className="text-sm sm:text-base font-bold text-green-zzz mb-1 flex items-center gap-2 drop-shadow-[0_1px_0_rgba(0,0,0,0.15)]">
+                                    <p className="text-sm sm:text-base font-bold text-green-zzz-readable mb-1 flex items-center gap-2">
                                         À la recherche d'une alternance
                                         <span className="inline-block w-4 h-4 bg-green-zzz/20 rounded animate-pulse"></span>
                                     </p>
@@ -73,7 +74,6 @@ export default function Welcome() {
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>

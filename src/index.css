@@ -7,13 +7,18 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
   --bg-green-zzz: #d8fa00;
+  --text-green-zzz-readable: #b8d400;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
+}
+
+
+.text-stroke-black {
+  -webkit-text-stroke: 2px black;
 }
 
 .bg-green-zzz {
@@ -22,4 +27,13 @@ body {
 
 .text-green-zzz {
   color: var(--bg-green-zzz);
+}
+
+.text-green-zzz-readable {
+  color: var(--text-green-zzz-readable);
+}
+
+.neon-text {
+  color: var(--bg-green-zzz);
+  -webkit-text-stroke: 1px rgba(0,0,0,0.95);
 }
