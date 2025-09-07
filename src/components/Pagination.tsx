@@ -8,12 +8,13 @@ export default function Pagination() {
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
-            const current = sections.find(section => {
+            for (const section of sections) {
                 const el = document.getElementById(section.id);
-                // Adjust offset as needed for better accuracy
-                return el && scrollY >= el.offsetTop - 100;
-            });
-            if (current) setActiveSection(current.id);
+                if (el && scrollY >= el.offsetTop && scrollY < el.offsetTop + el.offsetHeight) {
+                    setActiveSection(section.id);
+                    break;
+                }
+            }
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -22,7 +23,7 @@ export default function Pagination() {
     }, []);
 
     const scrollToSection = (id: string) => {
-        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     };
 
     const scrollToTop = () => {
@@ -31,7 +32,6 @@ export default function Pagination() {
 
     return (
         <div className="fixed right-6 top-1/2 transform -translate-y-1/2 z-40 hidden md:flex flex-col items-center space-y-3">
-
             <div className="flex flex-col space-y-2 bg-neutral-800 dark:bg-neutral-900 rounded-lg p-2 shadow-lg border border-neutral-200 dark:border-neutral-700">
                 {sections.map((section) => (
                     <button
@@ -39,7 +39,8 @@ export default function Pagination() {
                         onClick={() => scrollToSection(section.id)}
                         className={`
                         relative w-10 h-10 rounded-md font-bold text-sm transition-all duration-300 group
-                        ${activeSection === section.id ? 'bg-green-zzz text-neutral-900 shadow-md' : 'text-white hover:bg-neutral-700 '}`}
+                        ${activeSection === section.id ? 'bg-green-zzz text-neutral-900 shadow-md'
+                            : 'text-white hover:bg-neutral-700 dark:hover:bg-neutral-800'}`}
                         title={section.name} >
                         {section.label}
 
