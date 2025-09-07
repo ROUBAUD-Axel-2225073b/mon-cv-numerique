@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Pagination from './components/Pagination'
 import AboutMe from './components/sections/AboutMe'
 import Footer from './components/sections/Footer'
+import Project from './components/sections/project'
 import Welcome from './components/sections/Welcome'
 import './index.css'
 
@@ -14,7 +15,8 @@ function App() {
             <Navbar/>
             <Pagination/>
             <Welcome/>
-            <AboutMe/> 
+            <AboutMe/>
+            <Project/>
       </main>
       <Footer/>
     </div>
