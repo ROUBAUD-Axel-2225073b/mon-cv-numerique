@@ -1,4 +1,4 @@
-import type { NavItem } from '../types';
+import type { NavItem, Section } from '../types';
 
 // Route navigation
 export const navItems: NavItem[] = [
@@ -8,4 +8,12 @@ export const navItems: NavItem[] = [
   { label: 'Contact', href: '#contact' },
   { label: 'CV', href: '/cv.pdf' },
 ];
+
+export const sections: Section[] = [
+  { id: 'welcome', label: '1', name: 'Accueil' },
+  { id: 'about', label: '2', name: 'À propos' },
+  { id: 'projects', label: '3', name: 'Projets' },
+  { id: 'contact', label: '4', name: 'Contact' },
+];
+
 
