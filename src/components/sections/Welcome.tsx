@@ -9,8 +9,8 @@ export default function Welcome() {
             
             {/* Principal diagonal */}
             <div className="absolute top-0 right-0 w-3/5 sm:w-1/2 md:w-1/2 h-full drop-shadow-xl/50 group">
-                <div className="absolute inset-0 w-full h-full bg-gradient-to-bl from-neutral-50 via-neutral-100 to-neutral-200 transform 
-                            skew-x-3 sm:skew-x-6 md:skew-x-17 origin-top-right border-l-2 "></div>
+                <div className="absolute inset-0 w-full h-full bg-gradient-to-bl from-neutral-50 via-neutral-100 to-neutral-200 transform skew-x-3 sm:skew-x-6 md:skew-x-17 origin-top-right border-l-2 ">
+                </div>
             </div>
             
         </div>

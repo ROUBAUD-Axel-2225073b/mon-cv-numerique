@@ -28,7 +28,7 @@ export const Projets = [
     status: "Terminé",
     tags: ["Unity", "C#"],
     links: {
-      // demo: "#",
+      demo: "#",
       github: "https://github.com/Noobos100/crousgame",
       external: "#"
     }
@@ -38,13 +38,13 @@ export const Projets = [
     title: "Site Web Ananta France",
     subtitle: "C'est un projet Fan basé sur le jeux Ananta",
     description: "Le but de ce site est de relayé l'actualité du jeux pour la communauté francophone faite en collaboration avec 2 personnes et voir plus encore une fois que le jeux sera sortie.",
-    image: "https://media.discordapp.net/attachments/1227164039789150218/1414260118211657852/image.png?ex=68beebdf&is=68bd9a5f&hm=e4809749cce94404ad1651e8159c038c382902014c7e6ae3c5ae376a5b0624d0&=&format=webp&quality=lossless",
+    image: "https://media.discordapp.net/attachments/1227164039789150218/1414271010588590141/image.png?ex=68bef604&is=68bda484&hm=2e190fc25acaa0762f23ddbd1fe9dc939b07fff64bcb4d1cdb5a108acf64f746&=&format=webp&quality=lossless",
     category: ["Jeu vidéo", "Site Web"],
     date: "01/09/2025",
     status: "En cours",
     tags: ["Figma", "React", "TypeScript","Css"], 
     links: {
-      // demo: "#",
+      demo: "#",
       github: "#",
       external: "https://www.figma.com/design/DE8nxEjDuIDbGto0znV5xG/Ananta-France?node-id=0-1&t=r5V34VbL9bkzMWMC-1"
     }
@@ -64,5 +64,5 @@ export const Projets = [
       github: "https://github.com/ROUBAUD-Axel-2225073b/mon-cv-numerique",
       external: "#"
     }
-  }
+  },
 ];

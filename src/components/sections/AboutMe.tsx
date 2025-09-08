@@ -1,11 +1,6 @@
 export default function AboutMe() {
     return (
         <section id="about" className="py-20 bg-white dark:bg-neutral-900 relative overflow-hidden">
-            {/* Background decoration */}
-            <div className="absolute inset-0 opacity-5">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,_theme(colors.neutral.400)_1px,_transparent_0)] [background-size:32px_32px]"></div>
-            </div>
-
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
                 <div className="text-center mb-16">
